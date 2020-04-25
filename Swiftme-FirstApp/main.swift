@@ -7,9 +7,20 @@
 //
 
 
-print("Введите значение первого аргумента")
-var a = readLine()
-print("Введите значение второго аргумента")
-var b = readLine()
-let result = sum(a, b)
-print("Результат сложения: \(result)")
+//Запрос первого числа
+var num1: String?
+repeat {
+    print("Введите первое число")
+    num1 = readLine()
+} while Int(num1!) == nil
+
+//Запрос второго числа
+var num2: String?
+repeat {
+    print("Введите второе число")
+    num2 = readLine()
+} while Int(num2!) == nil
+
+//Подсчет результата
+var result = sum(num1, num2)
+print("Результат сложения - \(result)")
