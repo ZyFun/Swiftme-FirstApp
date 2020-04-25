@@ -23,4 +23,4 @@ repeat {
 
 //Подсчет результата
 var result = sum(num1, num2)
-print("Результат сложения - \(result)")
+print("Результат операции - \(result)")

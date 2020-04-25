@@ -9,5 +9,20 @@
 import Foundation
 
 func sum(_ a: String?, _ b: String?) -> Int {
-    return Int(a!)! + Int(b!)!
+    print("Введите необходимый знак орифметического действия")
+    let arithmeticSign = readLine()
+    var result = Int()
+    switch arithmeticSign {
+        case "+":
+            result  = Int(a!)! + Int(b!)!
+        case "-":
+            result  = Int(a!)! - Int(b!)!
+        case "*":
+            result  = Int(a!)! * Int(b!)!
+        case "/", ":":
+            result  = Int(a!)! / Int(b!)!
+        default:
+            print("Вы ввели неверный знак")
+    }
+    return result
 }
